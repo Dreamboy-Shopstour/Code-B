@@ -1,0 +1,96 @@
+# AshAlert: Volcanic Ash Monitoring System
+
+**Hackathon Project | Climate Resilience | Philippines**
+
+AshAlert is a low-cost, IoT-powered sensor system designed to detect and monitor volcanic ashfall in real time. It aims to protect communities in ash-prone areas like Alabat Island, Bicol, and Mindoro by providing early detection, alert systems, and actionable data.
+
+---
+
+## Problem Addressed
+
+The Philippines faces frequent volcanic eruptions. Ashfall can:
+- Disrupt agriculture, power, and transport
+- Cause serious health issues
+- Blindside unprepared communities
+
+Yet, **there’s no low-cost, community-level monitoring system** to detect ashfall before it spreads.
+
+---
+
+## Solution
+
+**AshAlert** uses:
+- **Dust sensors (e.g., GP2Y1010AU0F or PMS5003)**
+- **Microcontrollers (Arduino / ESP32)**
+- **Solar-powered battery setups**
+- **Wi-Fi or LoRa for remote areas**
+- **Dashboard + SMS Alert system**
+
+The goal: *A decentralized, accessible system for LGUs, barangays, and schools.*
+
+---
+
+## Features
+
+- Real-time ashfall density detection
+- Local alert system (buzzer/SMS)
+- Community dashboard (web-based)
+- Cloud data storage (e.g., Firebase)
+- Mobile-friendly display
+
+---
+
+## Tech Stack
+
+- Arduino / ESP32
+- Dust Sensor (PM2.5/PM10)
+- Firebase / Blynk / ThingsBoard
+- Node.js + React (for dashboard)
+- Globe SMS API / Twilio (alerts)
+
+---
+
+## System Architecture
+
+[Sensor Unit] --> [Microcontroller] --> [WiFi/LTE/LoRa] --> [Cloud DB] --> [Dashboard + Alert System]
+
+---
+
+## How to Use
+
+1. Assemble the sensor unit (see `/hardware`)
+2. Upload Arduino code (`/firmware`)
+3. Deploy dashboard (`/web`)
+4. Configure alert thresholds in config
+
+---
+
+## Project Status
+
+- [x] Sensor prototype working
+- [x] Firebase integration done
+- [ ] Dashboard UI in progress
+- [ ] SMS alert system pending
+- [ ] Field testing in Alabat Island (planned)
+
+---
+
+## Roadmap
+
+- Add AI prediction based on eruption history
+- Partner with PHIVOLCS & LGUs
+- Integrate with Shopstour awareness campaigns
+- Expand to typhoon/landslide alerts
+
+---
+
+## Team
+
+**anacleto belazon– Founder, Visionary  
+Open to collaborators, engineers, and LGU partners
+
+---
+
+## License
+
+MIT License – Free for public/community use.
